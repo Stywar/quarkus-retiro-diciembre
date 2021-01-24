@@ -1,10 +1,10 @@
 org\aforo255\entity\Transaction.class
 org\aforo255\repository\TransactionRepository.class
 org\aforo255\GreetingResource.class
-org\aforo255\RetiroResource.class
-org\aforo255\entity\Currency.class
-org\aforo255\service\TransactionService.class
 org\aforo255\service\CurrencyService.class
 META-INF\panache-archive.marker
 org\aforo255\CryptoResource.class
 org\aforo255\service\ITransactionService.class
+org\aforo255\RetiroResource.class
+org\aforo255\entity\Currency.class
+org\aforo255\service\TransactionService.class
