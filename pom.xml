@@ -72,25 +72,21 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-opentracing</artifactId>
     </dependency>
-   <!--  <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-vault</artifactId>
-    </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-logging-gelf</artifactId>
-    </dependency> -->
-      <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-client</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
-    </dependency>  
-        <dependency>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-health</artifactId>
+    </dependency>
+      <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-jwt</artifactId>
     </dependency>
   </dependencies>
   <build>

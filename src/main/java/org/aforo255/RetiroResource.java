@@ -3,6 +3,7 @@ package org.aforo255;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
@@ -18,9 +19,11 @@ import org.aforo255.service.ITransactionService;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 import org.jboss.logging.Logger;
-@Path("/retiro")
+@Path("/withdrawal")
 public class RetiroResource {
-
+	
+	
+// retiro 234
 	
 	public static Logger LOGGER = Logger.getLogger(RetiroResource.class.getSimpleName());
 	
@@ -32,8 +35,10 @@ public class RetiroResource {
 	Emitter<Transaction> emitter ;
 	
 	@POST
+	@Path("/v1/withdrawalevent")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
+	@RolesAllowed("Admin")
 	@Transactional
 	public Response saveTransaction (Transaction transaction) {
 		
@@ -47,7 +52,6 @@ public class RetiroResource {
 			response.put("Transaccion", trx);
 			LOGGER.info("find saveTransaction");
 			return Response.status(Status.CREATED).entity(response).build();
-	}
-	
+	}	
 	
 }
