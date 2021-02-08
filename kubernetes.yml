@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service-retiro
-        image: antony0618/quarkus-ms.retiro:v2.#{Build.BuildId}#
+        image: antony0618/micro-retiro:v2.#{Build.BuildId}#
         ports:
         - containerPort: 8080
 ---
